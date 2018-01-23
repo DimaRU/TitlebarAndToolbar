@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="pwa-Cc-dRm">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="pwa-Cc-dRm">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13189.4"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13771"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
         <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
     </dependencies>
@@ -506,14 +506,14 @@
             <objects>
                 <viewController id="LrX-tr-nbp" customClass="ViewController" customModule="TitlebarAndToolbar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="kaG-WO-9Uu">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="539"/>
+                        <rect key="frame" x="0.0" y="0.0" width="661" height="539"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p7z-Pf-rCk">
                                 <rect key="frame" x="20" y="323" width="303" height="196"/>
                                 <subviews>
                                     <stackView distribution="fill" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q0Z-VU-hga">
-                                        <rect key="frame" x="0.0" y="175" width="221" height="21"/>
+                                        <rect key="frame" x="0.0" y="175" width="220" height="21"/>
                                         <subviews>
                                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ipw-L2-kcw">
                                                 <rect key="frame" x="-2" y="4" width="58" height="17"/>
@@ -524,7 +524,7 @@
                                                 </textFieldCell>
                                             </textField>
                                             <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vSh-3w-XFa">
-                                                <rect key="frame" x="60" y="-3" width="164" height="26"/>
+                                                <rect key="frame" x="60" y="-3" width="163" height="26"/>
                                                 <popUpButtonCell key="cell" type="push" title="Default" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" tag="1" imageScaling="proportionallyDown" inset="2" selectedItem="Zam-aQ-dD6" id="n9z-aq-zgf">
                                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                                     <font key="font" metaFont="menu"/>
@@ -666,7 +666,7 @@
                                 </customSpacing>
                             </stackView>
                             <matrix verticalHuggingPriority="750" allowsEmptySelection="NO" autosizesCells="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lYi-KY-G2F">
-                                <rect key="frame" x="50" y="253" width="67" height="62"/>
+                                <rect key="frame" x="50" y="231" width="67" height="84"/>
                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 <size key="cellSize" width="67" height="18"/>
                                 <size key="intercellSpacing" width="0.0" height="4"/>
@@ -688,6 +688,10 @@
                                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
+                                        <buttonCell type="radio" title="Top" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="s8D-kx-6BD">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
                                     </column>
                                 </cells>
                                 <connections>
@@ -696,7 +700,7 @@
                                 </connections>
                             </matrix>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jFa-f7-fax">
-                                <rect key="frame" x="329" y="246" width="137" height="32"/>
+                                <rect key="frame" x="510" y="224" width="137" height="32"/>
                                 <buttonCell key="cell" type="push" title="Launch Window" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ziN-4Z-NgM">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -706,17 +710,17 @@
                                 </connections>
                             </button>
                             <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fg3-Ac-nDb">
-                                <rect key="frame" x="20" y="20" width="440" height="225"/>
+                                <rect key="frame" x="20" y="20" width="621" height="203"/>
                                 <clipView key="contentView" id="kAD-YE-ark">
-                                    <rect key="frame" x="1" y="1" width="438" height="223"/>
+                                    <rect key="frame" x="1" y="1" width="619" height="201"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textView editable="NO" importsGraphics="NO" verticallyResizable="YES" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="aGO-T2-Y9T">
-                                            <rect key="frame" x="0.0" y="0.0" width="438" height="223"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="619" height="201"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <size key="minSize" width="438" height="223"/>
-                                            <size key="maxSize" width="463" height="10000000"/>
+                                            <size key="minSize" width="619" height="201"/>
+                                            <size key="maxSize" width="621" height="10000000"/>
                                             <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                         </textView>
                                     </subviews>
@@ -730,10 +734,83 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="22F-fC-a6j">
-                                    <rect key="frame" x="423" y="1" width="16" height="223"/>
+                                    <rect key="frame" x="604" y="1" width="16" height="201"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GTh-MI-i5x">
+                                <rect key="frame" x="381" y="502" width="104" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Toolbar buttons:" id="mJ3-v7-kJm">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" fixedFrame="YES" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5in-px-DFC">
+                                <rect key="frame" x="383" y="370" width="133" height="124"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dzE-yO-mvb">
+                                        <rect key="frame" x="-2" y="108" width="57" height="18"/>
+                                        <buttonCell key="cell" type="check" title="Close" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="2gO-6o-tby">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                    </button>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="MU1-MH-k7S">
+                                        <rect key="frame" x="-2" y="86" width="76" height="18"/>
+                                        <buttonCell key="cell" type="check" title="Minimize" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="WYJ-5i-9Ix">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                    </button>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ipz-yi-pdW">
+                                        <rect key="frame" x="-2" y="64" width="57" height="18"/>
+                                        <buttonCell key="cell" type="check" title="Zoom" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="iVV-gZ-X0F">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                    </button>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Nf8-Wm-TRl">
+                                        <rect key="frame" x="-2" y="42" width="68" height="18"/>
+                                        <buttonCell key="cell" type="check" title="Toolbar" bezelStyle="regularSquare" imagePosition="left" inset="2" id="zbd-2u-LNo">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                    </button>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5Wx-Kc-y3i">
+                                        <rect key="frame" x="-2" y="20" width="111" height="18"/>
+                                        <buttonCell key="cell" type="check" title="DocumentIcon" bezelStyle="regularSquare" imagePosition="left" inset="2" id="ZUX-UY-fw7">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                    </button>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="I05-QQ-qN3">
+                                        <rect key="frame" x="-2" y="-2" width="137" height="18"/>
+                                        <buttonCell key="cell" type="check" title="DocumentVersions" bezelStyle="regularSquare" imagePosition="left" inset="2" id="Z8D-zx-fGG">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                    </button>
+                                </subviews>
+                                <visibilityPriorities>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                </visibilityPriorities>
+                                <customSpacing>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                </customSpacing>
+                            </stackView>
                         </subviews>
                         <constraints>
                             <constraint firstItem="p7z-Pf-rCk" firstAttribute="top" secondItem="kaG-WO-9Uu" secondAttribute="top" constant="20" id="3jc-t0-Kk6"/>
@@ -750,21 +827,27 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="closeButtonCheckBox" destination="dzE-yO-mvb" id="x9S-W9-cHN"/>
                         <outlet property="codeTextView" destination="aGO-T2-Y9T" id="beN-7j-G3n"/>
+                        <outlet property="documentIconButtonCheckBox" destination="5Wx-Kc-y3i" id="jF1-rM-Htn"/>
+                        <outlet property="documentVersionsButtonCheckBox" destination="I05-QQ-qN3" id="Cy9-TH-1hk"/>
                         <outlet property="fullContentViewCheckbox" destination="4Q6-g6-HWa" id="DV9-g5-kEA"/>
+                        <outlet property="miniaturizeButtonCheckBox" destination="MU1-MH-k7S" id="Hrn-yu-YXf"/>
                         <outlet property="showToolbarCheckbox" destination="jI5-tE-lHW" id="SaY-lS-Zrd"/>
                         <outlet property="titleAccessoryViewCheckbox" destination="2Tz-Ze-Gjq" id="QJ4-kV-P2m"/>
                         <outlet property="titleAccessoryViewLayoutMatrix" destination="lYi-KY-G2F" id="WkC-wb-9Pu"/>
                         <outlet property="titleAppearsTransparentCheckbox" destination="UPB-GL-dqS" id="uBS-Ry-wvs"/>
                         <outlet property="titleBarCheckBox" destination="Jin-f7-VeQ" id="Uue-7x-0uM"/>
                         <outlet property="titleVisibilityCheckbox" destination="zVP-sM-BjM" id="e4s-YO-EM8"/>
+                        <outlet property="toolbarButtonCheckBox" destination="Nf8-Wm-TRl" id="ZBE-FO-D9T"/>
                         <outlet property="unifiedTitleAndToolbarCheckbox" destination="A8g-F4-Etu" id="FBp-2O-g2T"/>
+                        <outlet property="zoomButtonCheckBox" destination="Ipz-yi-pdW" id="Z6Z-iN-qeJ"/>
                     </connections>
                 </viewController>
                 <customObject id="ti0-wK-tfk" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <userDefaultsController representsSharedInstance="YES" id="47q-Rl-7hn"/>
             </objects>
-            <point key="canvasLocation" x="651" y="828.5"/>
+            <point key="canvasLocation" x="741.5" y="828.5"/>
         </scene>
         <!--Sample View Controller-->
         <scene sceneID="hIz-AP-VOD">

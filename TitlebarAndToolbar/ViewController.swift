@@ -24,6 +24,12 @@ class ViewController: NSViewController, NSWindowDelegate {
     @IBOutlet weak var titleAccessoryViewLayoutMatrix: NSMatrix!
     @IBOutlet weak var showToolbarCheckbox: NSButton!
     @IBOutlet weak var titleBarCheckBox: NSButton!
+    @IBOutlet weak var closeButtonCheckBox: NSButton!
+    @IBOutlet weak var miniaturizeButtonCheckBox: NSButton!
+    @IBOutlet weak var zoomButtonCheckBox: NSButton!
+    @IBOutlet weak var toolbarButtonCheckBox: NSButton!
+    @IBOutlet weak var documentIconButtonCheckBox: NSButton!
+    @IBOutlet weak var documentVersionsButtonCheckBox: NSButton!
     
     @IBOutlet var codeTextView: NSTextView!
     
@@ -175,6 +181,8 @@ class ViewController: NSViewController, NSWindowDelegate {
                             titlebarController.layoutAttribute = .left
                         case 2:
                             titlebarController.layoutAttribute = .right
+                        case 3:
+                            titlebarController.layoutAttribute = .top
                         default:
                             titlebarController.layoutAttribute = .bottom
                         }
@@ -185,6 +193,14 @@ class ViewController: NSViewController, NSWindowDelegate {
                 }
                 window.titleVisibility = titleVisibilityCheckbox.state == NSControl.StateValue.off ? .hidden : .visible
                 window.titlebarAppearsTransparent = titleAppearsTransparentCheckbox.state == NSControl.StateValue.on
+                
+                // Buttons
+                window.standardWindowButton(.closeButton)?.isHidden            = closeButtonCheckBox.intValue == 0
+                window.standardWindowButton(.miniaturizeButton)?.isHidden      = miniaturizeButtonCheckBox.intValue == 0
+                window.standardWindowButton(.zoomButton)?.isHidden             = zoomButtonCheckBox.intValue == 0
+                window.standardWindowButton(.toolbarButton)?.isHidden          = toolbarButtonCheckBox.intValue == 0
+                window.standardWindowButton(.documentIconButton)?.isHidden     = documentIconButtonCheckBox.intValue == 0
+                window.standardWindowButton(.documentVersionsButton)?.isHidden = documentVersionsButtonCheckBox.intValue == 0
             }
         }
     }
